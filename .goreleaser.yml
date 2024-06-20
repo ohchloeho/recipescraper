@@ -27,6 +27,8 @@ brews:
       name: chloe ho
       email: ohchloeho@gmail.com
     directory: Formula
-
+    repository:
+      owner: ohchloeho
+      name: homebrew-ohchloeho
 checksum:
   name_template: 'checksums.txt'
