@@ -1,0 +1,30 @@
+builds:
+  - binary: recipescraper
+    goos:
+      - darwin
+      - linux
+    goarch:
+      - amd64
+      - arm64
+    env:
+      - CGO_ENABLED=0
+    flags:
+      - -mod=vendor
+
+release: 
+  prerelease: auto
+
+universal_binaries:
+  - replace: true
+
+brews:
+  - 
+    name: recipescraper
+    homepage: https://github.com/ohchloeho/recipescraper
+    commit_author: 
+      name: chloe ho
+      email: ohchloeho@gmail.com
+    directory: Formula
+
+checksum:
+  name_template: 'checksums.txt'
